@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot-wear Store</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        body {
+            background-color: #ecccffe0;
+            margin: 0;
+            padding: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* box-sizing: border-box; */
+        }
+
+        .container {
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .store {
+            width: 60%;
+            height: 100%;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.175);
+            padding: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            min-height: 100%;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Tangerine', serif;
+            font-size: 60px;
+            color: #5a5454;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        .shoes {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .cart {
+            background-color: #f3f2f2;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        .cart:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.434);
+            transform: scale(1.02);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .cart img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .detail {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .detail p{
+            margin: 4px;
+            font-size: 16px;
+
+            color: #292828;
+        }
+
+        .description {
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .cart button {
+            background-color: #5a57629f;
+            color: rgb(34, 33, 33);
+            border: none;
+            width: 100%;
+            height: 34px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .cart button:hover {
+            background-color: #363154;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="store">
+            <i>
+                <h3>Sneaker Store</h3>
+            </i>
+            <div class="shoes">
+
+                <div class="cart">
+                    <div><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS7CcdmMnrOo8PQ0dSCA9lTrDxKJ4RytFy5A&s"
+                            width=" width: 100%" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="description">
+                            <strong>
+                                <p>Air Jordan 1 Mid</p>
+                            </strong>
+                            <p> Colors - 3 avail</p>
+                            <p>Men's shoes</p>
+                            <p>MRP: Rs.120</p>
+                            <button>Add To Cart</button>
+                            <br>
+                            <button>By Now</button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnABVG_ooQdRC7ZcsAHnkz0wkkPzwcYNGILw&s"
+                            width=" width: 100%" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="description">
+                            <strong>
+                                <p>Air Jordan 2 Mid</p>
+                            </strong>
+                            <p> Colors - 3 avail</p>
+                            <p>Men's shoes</p>
+                            <p>MRP: Rs.120</p>
+                            <button>Add To Cart</button>
+                            <br>
+                            <button>By Now</button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div><img
+                            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFRUXGBUYFxUXGBcYFRcXFxUXFhUVFRcYHSggGBolHRUXITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OFRAPFS0ZFRkrLSsrLS0rLSstKy0tLS0rKy0tNystLTcrKy0tKys3KysrKzcrKzcrKysrLSsrKysrK//AABEIAOEA4AMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xABEEAABAwIEBAMFBQUGBAcAAAABAAIRAyEEBRIxBkFRYSJxgQcTMpGhFEJSscFictHh8BUjQ4KSsiQzY/E0U3ODosLS/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAgEQEBAQEAAgICAwAAAAAAAAAAEQECAyExQRITFFFh/9oADAMBAAIRAxEAPwDklQ3RMKD0KS20N4SYsnXlMuKos8qVpi9gqrKVbYrYKamrDAjwosW0lLy8eFSW05KmfKKnFYeWEdQsfUbFuhXRsbh4AssbxFgDSqTEB/iH6rVazVTCIhGURWmjlSxSplB7bBBpURLy11yPVdKzvDvfl1CpUbHu2tAjS0BrtIa4xOoGP2bnay5fh36Xgre8O5404WtSq1abYBFN9Y6tGpptTYWudbSYjSBO6zqbjaZDiXV8EKbaeMh7dNSuX0zTdyc1rqzoayZsBK5BnTm3baWuNxfaxvz2V9lucUaeCLnUKeIqivoays97mBj6eoObQDgHeIOB81ls2e81HOqUvdF8v0BhptAJtoYdm2MeSYmEYeiXi24/JTMJh3DcKBgq5BkFXlPGBw6FaF1kFIgprP8ADVS7wlSeH603TWc16gdYLn9op24bEdSl/Z66dGJrfhKcbXrdFRW4mlWEyoJa/mrPF4irzCri9xNwq06bwEzwN8lsKrVleAR4G+S1tZc2XnJxSWpxtIpQoldGjZSXBS2YQlPPwBAmFaE5Ubq4xWypsusVdVx4Qm/DKwy74VMbU03UPLB4VOFHVIWUQswzphHWCq3jXGMq0cMW7tDgfonMzyMiSs9jqJDYOwKuNYrkECgFps+y7Y5hJDUhphSRcKhiubWWn9neMaMWGuFOHNPiqGGscwio1wMHcsAjcg7hZqrZHleKNGvTqA/A9rpgGwN7HnErOjXN4kdhsTmDmuayq8FtOpTaHtbVZVaZZqB0hw1Sf2vJZnN8ViKp99XNV5dYVagd4ouA1xERfYK5zXMGU8xpYmlUbVaPduJqHVdg0H3haJnSAZidlC4j4kqYhraAth6ZHumlznuGkOaHF77yQ4zYbDomYiioOgqZ74iVDDgEoPmw52VVteCHEtdPX9FYZrmul0aVE4QoaGwdzc+cbLV/2Gypcrnrmyv9qucLNSHZg8clrm5GwGwT5yZnRKOdYnGuO4TFGkXXgrolTI6fRQcVgGAEAJVWfBDgGALV1Fh+HaugwtfRryFlHJ2ZSE7TykK3aE61q2lQqGVt6JePwI927yU9gQxQ8B8kK55QEPPmrmqfCqotiofNWx+FFTcudZWuXHxhVGX7K/4dpaqiJqTnzPAYHJY/MMB7zD1HAeJomOcDdbziM6WQqrhqk1znA7EEfRTdi45C4pyk1SMywhZWqMP3XuHpNvomXPDQumfDoSUoOTOtKFRUJe4lIEp8hANQNQUNJTsI4QM+7T+EEOB7j80QCca1QbjKXQVssDiLLO5PlpdSpVRJDmg+uxWlw2DIC5brnCTiTKc+0Jf2FE7Ad1lULEYlVeIqK+/s4JLsA1Bl8LjdDrharB59TgTZRqmVMKbOQNPNIVThydY8qMMY1KGPHRdGImQeSXWpHSfJRG5hKLE4l7mwFKsZDEM/vT5qwHwpz+zHSXEKzyrK9QMhLjUQMC6yuske7XDVEGDAeQrPBM0Olu6VnVpispfU+JxS8tyBtMzKmUKdZ/ZWOHyt8+Jyzvsxzb2kcKaGuxdIk7a28hy1BczJuvS+fZY1+Fqs3ljrei82FsW6SPkt8a3mkIFLRwttHKI8KJLo7FIcgMBAhElICCWE2E4EHXvZzWD8C1sy6m57T2l2pv0Kv3g8gsR7FqwNavSPNjXgd2ug/RwXVnUGhc9z256zha/oiNOotAWtTbiOikSqLQ9Icx3RXbiOiApjohVAQ7oiAeeS0IpNS2hg5IOc/wBmxySxlJOzVsKeFYN0/qYFn21WLp5K/orTA5OeYV+a7UX2kDZIlQKvD4c2OaVleRlkglSzj0TsxPJIVHqcNMLplSKOSsb/ADTZxzu6NtR7lYi1ZWDRAhJfiyoVLCvKlUsIeZVgPWSCCdwV5xzejor1W9HvH1K9NUMMF5/9ouB91mNdvUh48nD+RWuV5+WchGEEFt0OU+aEJDSlaygKEENSPUgJLYkB07X8lOw2WV3CW0ahHUMdHzhT8s/sjQ+zrGtoY+m97tLXNdTJ5eICCe0gLuL6ZXmmvW0bgg7dF0PKeJMZmNVmGFYYcGnPhBvoDZG8lxF9xsVndz6c+nT3Uim3MXOOMcmq5dQZicPia3vRUa17nHwkOB+75gbytnwxnf2vC0q8Q5wIeBsHtJDgO0hRlYwkylueEwawVBuKaKD3pOpBUvxBSQ9xVszLWBSGYZg5KQVIpuSxhHlW4AS7JBUty481Ko5cApidBVEZuEaOSdp0oTpKLWAgBJS2TzTLsUAgMVOyCawrg3tWcTmNQyCC1kR0vZdO43xOI+x1ThwS4CXFu4Z94t6mFx7hJ4OLYHjUH2Oq/U81nep7a4z2p6WGqO+FjneQJTrMtrH/AA3/AOkr0LgMHTDQGsAnsFMGX0x90fJcP5O/WPZ+jPvXnzA8PYh9RtP3TmlxgFwhotMkrUYP2YVn3dWY3yaSfzCLjLjV9Ss5mHcaVOmS3UI1PLbFxPIbwAq/JeNsXQeC6oarPvMfeRz0u3B9YW968m/45XjNjWYH2UUR/wA2s9/ZsNWky/2fZeyP7gOPV5LvzVvk+YMxFJlVhlrhI/UHuNk/WqFuy8/XfV969PPPM9HcFkuFp/BRptPZrQp76LYiB8lUMxt7p048dUzpneXIfaPkrab6xaIGrUPWD+qzuQY00a1GsP8ADcx3mNnD1aXD1XQvaW8Opvd1YPnMLmdNd/F8PN5s9t37SuK6OLpMw2FmqC4Pe4B0DTOlm3xSb+S0vs/y99DA02VGlri57y07gOcS0EcjELN+ySswV69M/E9rHN/yEh4+rSumVKfddscdRKjUx7uFJe2Ey4qoSkPKMoi1BJ1o1Fa89FIa2UCwEZckQeqVCBQci1lApMoFPaTzTTsET95SKfkpFMpoh0suPVZX2gcSOwIYymGufUDjJPwxAmPVTuK+NsPQp1qbah9+GkNABs4i11xHEVnPOp7i49XEn81mrG04U9otXDNqNrh9YOuyHAFpmSCT90qp4T/vsxa8gN1Pe/SNgTJgdrrOm3dKw2LfTeH0yWuGzhuFOsuRrnZr0lRZpAUPNs0bSY59R2lo3de02Fhvc7LE8Bcd65o4t7QR8FQ2kdD3VT7QuMDVqVMJTa33TXNl9y55EOkEGAJIXl58W2PZ15s/E1icry92r3ZpVGTDHe/fTrjwan16+vwsYNJMNY67oEqvz/hmlRFZ9GrUc2n7gxUpwC2tp0htUEB7/FMaRYHoVnyJS6uJqOa1jqj3Mb8LHOcWt/daTDfRet4nQfZFmp1VMMXcveUx9HgfQ+pXTKmHJXnfKse/D1mVqZh7DI6Hq09iJHqu+ZXxvl9WlTqOxFOk5/3HuAc13MH157c15/Jx7r0eLyT1prGYJx+FV5wdWYC2vu2VGhzSCDcOBBBHUEbqo4jzClg6DqtQi1mjm5x2aOpK5fhrv+zHLPaFiYLaJILrOcByaPhH6+ixodCPH5g6tUdUeZc8yexPIdgmA0k9l6+OZkePvr8tq+4QzA0cVSqxILwwj9l/g/8AtK7aysHAOaZaRIPZcBoNnwgSTYAbk8gIXTeBnYmhTdSrt/u5DqbtbNTZPiDgXTBMbcyVvHPWqqBNaU84yJFx1TBcVUAtSXFJqVSmpKCYHISFHbWShVUofhLCRRdPJPjsFKEhKaxOhp7KuzLP8PhxNWq0dpk/IIRZMBWV9ofErsExgpaTUeTY3hsbws9nXtOcSRhqYA/G79Ao3DHDwzPXXxOI1VCSwMb8bD917hyYixg8XiXVXue8kvcZJPVN6SrriLh6tg6pp1m9dL/uvaPvNVUXwim20eqOwRlNuKAjEp/SCAITdOmOfp2SyI/iEBFvXZE+Y/EOvMJbp33HUfqia/UA1ojmSfqfJAy+pNmiO5uiFJx3v6qU2lPkPqic5BaZRxJi8Mz3dCvUpsmdIIIv01Ax6KNmGY18QQ6tVqVSPxOcQPJswPQKHKAcpCj912+v81ccOZMK+t79TaTdINQFjWhznNFy8xYFziNzAAuQqYBznBrQSTsBz7LVZpS9xSbhWtDqj9LacEe8PvWsdVNQM3Y5xDGtdsKZN91Q3wvgwKdbEmwpjS1w6xL3Cejf9yscFmjnirRqEOLJcJiHQNr/AIhYjuOiZ4rxDcLhhg2GSAGvcPvPJ1VT+Q9VjX1XPcXO3cf6CDsfA2a06lD3bX6iz4ZPi0O8TQe4ktP7qvy081hOADQpUy8N1jSWvY+2oug+Ai4MtbH0K2FKo2iya2MD3Od4WOaGkB12tDh8UX33hVIfc1AtT7gmHvVQ3ToqRTYFGbVMWTwGljnHkCfkJWVN5pm9HDs1VXhvQcz5BYrNPaVuMPS/zO/gs1nGKNaq573SZ25DsFFa1o6IpzMOJcZX+Kq4Do3wj6XVZ9ke4yZk8yb/AFVjraOaRVxTQJlBCqYQtEkhKy/Hvo1G1aZ0vY4OHQwZAI5hRMRitRk7KL7zUYbJPQST8gg03FHFb8aGBzG02sLiGtJMueZc4l35LOkK1wHC2NrR7vDVSDz0wPqtTlfsix9SC/RSHcyfkEHP9ZS2LtmV+xGiINeu9/ZgDR87lZP2m4DL8IRgsHTHvWw6tVJLnNtLaYJ2JmT2jqgwjqIF0cGNpHbcJIeRunaTmiTPoECWuaAQ0ySduiU1h2HqUhjIE8z9JUhw0gjna/LyQNVH8hsminHoe5PkgaBRPclupRzTRF0E/JcWKNanVM+F7XGN/CZt3VnlWZuY77bWPvKghlLVHxaSDU9LgdSXdFI4f4Y1Yd+OxUswrJ0DZ+IfyazozqecGOqzONxXvHlwAAsGtGzRs1rR/W6BWMxbqrtTzJ/nJ/NX+R5DVA9+8ik37upupzidg1vU7DndSeG+HHte0vZqqkBzaNtTWnZ9Um1Jvc36CVr8fiKOHLXYh4fVO0WZTB/A0mw/aNz9EFGKZozVLR70Nn3cwGj8bgN3noLDzSDn7a9Fzqgszdo3LXW0tO53kcwQs/nWfOqV3PYfCW+7AjdsyD5pHD+TVq9RrWNLiTdxn3dMblzjtImw6kIOu8NvccJSLpnTz3iTE94Umq4dEjDUBSpspAyGgAHrG5Pco3rTKQymLSIBS9TbtkEbFRzSncz9FFr5aT8OxN+qw0VleTZPUHua1OmKokai4tL72IcDup1T2R5a+496Afw1SR6TKy2YcKMqzeP4oZfkeNoECjjKtMdJ1N/0ukKjSt9jOX83Vz/7h/ROj2O5ZzZVd51Xx+aYw+YZqyxr0Kg/apkE+oKlt4jzAb06B8nPH6IJFD2XZU0z9mDv3i4/mVoMFkmGoiKVCmyOjAPrCzR4hxxsKdAf5nn9E1Vx2Pc8EVqbG6YLAyRPWSZQba3JG0rBVKWKcfHi3x0Y1rf4lU/FGYNwVLXVxFZ73SKdP3rgXO6mNmjmUGo9pXGjcvw8MIOJqAik3fT1quHQfU2XnGrUc9znucXOcSXONySTJJ6lOYzF1K1Q1Kri953c4kmOQE7AdEKdNBGLjzCUGc4j9O5UsUY/qE6KO9psLfmR/XJA1SpwDIvGx5pNW8+Wydq85uI9R/X6Jio78t0D+FYI1fJNV6qU8w0BQar0B1Ki6N7M/Zo/FluJxbSzD2cxhs6t5/hp/U9grf2aeysnTisey1jTw5+YfWH5M+fRdW4hx/2bCV64H/KpPeAP2Wkgfkg4h7YOIvf4luCw8e5w/hIbAZrG/YNaAB/2UHhvJG0gKrnNbNhXeB/pw1M7n/qEeQ5rI4XMC06tIe6S46rtLyZLnD71ybbJWLx1asddR5d5khoH4R27BBtc34up0GOo4T4pl1X4iTzc57vid3v5rE4ms+o4vqOLiebpJPkE9lmWVq5LcPSdVcBJiIA6nUQBtzN1tOHvZ28w/FyP+k0y7b77xt5N+aJWYyLhzEYlwFOm5jCJNV4LWxPInfyC63w/lTcJQFFhJAJJJ+847mOXkp4dECIAEeQAgBJIHX5qhusm3NQcCk1nDZVEyi6RpI732ShUOwF+1hZLaSQNgRv0hB9GLTB7LCiLSI6fl5onPvt6oy5vKSenLsiBfMCBv4eZ6f12QO09Prum31IJ6koqxeDYeqac91zpgX3mZ7IJYtGr5pAkn4bdeZSKJJAI2Nyf5Kl4n4xp4NmwfXM6Kc//ACf+Fv5oJvEXENLB0zUqGXH4KY+J7ug6N6nYLiOc5pVxVV1as6XHl91o5NaOgRZpmVXE1DVrO1PPyA5NaOTR0UaL/wBclVOU2p9iYpg2jnKs8NgubvkgRToud8InsixLC2Q7oD3CumeFvQBZvHYsue53a3ly/rugFSrfoS3fkVD13CbfU/7KRlWBqV6jaVFjqlR1msaJPmeg7myAnvLiAASSYAFySbAAC5PZdt9lvs0FDTi8Y0GvY06RuKX7TutT8vNWXs59mtPBRXxEVMVFubKM7hnV3Iu+ULoDigVKjZjh21aVSk4Atex7SOUOaR+qW90Ak2A3PL1WPzrjNl2Ychx2NQg6P8v4vPZB50wmCLntpMHvKhOmACWgzEmOXXkFusv9mr3Oa6viGhsXbTaZn8Ic60d49FpMpwlOjIota0EXtck3kn+Ku6dfqR/PpCsQ3lWWUMKzTRYGfiNy53QucbkqU6rbeFFOIOxv0E7d0barSRNvW/dVDukDnKSWN3DkHP2gjrB3TUOv4rfRAp4IuOSbG+8oe76ymwGtNp9TugmOxDC74bm8kyLdI805Uqkd5k6fvR+ig0azYJDS6Z+E2HYDeLpylVAa7V4eTi6bRyEb8+awqVTxILbDtf4hyJvHzTeILpBZGnZ3Xzsk0XTBJGn8Wx57hu3r2Sqj2Ehw33uUDmHa6/SLRYeZBEyl0hpgPdqncdOkJdWo/wAAaC484Nttjquk0cTUe4sIAj70C37JMRKCu4mzZuEw5cPE9xIptP4o3/dC4linve9z3kuc4klx3J/r8lu/aFiScT7s/wCG0N8yQHF0eoHosmIQQaVEnkpeHy8mJ+QUukBv3TjsQ1o3VUdDDNaBHz5p73jQN1VYjMfT8lMyfhzH4w/8Ph6jmn75Gin56nwD6Sgj5rmXg0t529Oao9RcQ0AkmwABJJ6AC5K6/knsRqOIdjcQGj/y6Nz5Go8R8m+q6Xw5wZgsF/4eg0O51HeKof8AO649IQcX4S9kWLxOl+I/4WlvDhNZw7M2b5u+S7ZwxwrhcBT0YemGz8Tzeo/u9xufLZXcpjFYptNpfUcGNFy5xAAHclA6VT8Q8QUMJTNSq791gu956NH67BYXin2tUm6qeCHvHXHvnAimO7Bu/wA7DzXKDiS74jMySTcyTJlIsbXiHjfEYowSKdLlSbef33W1H5DsoOCzKNxqttty5qkoVIUzDUC4Ecx5j5d1SNDQzxjdmzb7tr+qlUs4YREGT15eaoaWFIFwb7XkqdRwBPi7T2PnAkclEi4ZmVO0ugi2x/JSKbWuIh4MdYBPzVH9iM+G53JNmhStFtvCRHUSOhse6VF5VwbjcdtUQTESkNBbyjre/kAqahIGp0tiBbnPeVMo4jm242mYg/qVaLBmIcHXbsLcjdSjimGzm6pm5F57FUZxLxYuvzmLjlt5psZjUaBADpJ2iRHJUTWEF8ybDZtjY8zEgfJSn1gCG6htJG8SLmbBQ6uEc4Ah4tuJ8XcGDMb7kp04FpbJc5rQRBb4+8GRHPmsA30GvcS0G0E63G5G0Cdv4KVgMP8A3hJvItO+9tuqba5tNpfWeJd8IIi0cmwDP5dVBxOcl/8Ay/ALDULukdOQsqLg45tEeN0X2JJJtsG3Kp8fxS5xik0tFxP3vSbDmqjEYfxSXEkzzg99/NLp4cx4fisIvHbY3SDJ8Y1tVUVQXF0AP1bmNnTzR5FwnjMYw1MNTa9oOk/3tNpa7eHBzpFj0V7isna8HXGraJO/6KHl/D2Iw7jUw2IqUHWB0OkG2zwbH5FWKscJ7Jsyf8b6FLvrc8/Jrf1V9lnsVpyDicW9/VtJoY0+rtR/JVFPPs7pyPtVKrt8dJg32u0NRVeOs7bYjDT/AOm7/wDSkHTMm4Dy7DEOp4VhePv1JqP+b5j0WkBHJcCxPGueOsK1Jk/gpMkf6gVWYrOs8fZ2Lqjs3Sz/AGNCQehM2zSjhqZq16jaVNsS5xgXsB3PYKizD2iZZRaHOxlJ0gECmTUcQdvCwE/NefsTkuNrXrVKj7/4j3O/3GEujwbV3P8AGT0Viuh8Qe3Bt24LDknYVK1h5im259SFzLPeJMXjXasRWdUvZm1Nv7rBYee/dWFHhM6tJ+ZsFZ4bh1rSQbAcz17XVGWwuGc7cFW2Dy07kErV4XJ2MsWkGx1GY8o6d1NFAA+FtrXDZ57gjnupSqrB5K1okt+pkczb5qdhsuZILSWjlP3iN/65qwFNu3ikgGQbi1/OyVUwLjAbGna8hwj+iolQ6OEAm5JuJvB59LfzS2aBILHBxs4wdz5mSNuSsG4anTbLnkRy3E+oO/QJNDENmxEb2JJ7WAndAlmHaYI8UWuALXIvH0PVIxLBAEaifxWj5C/RDEOcZ0tub8wQO4d+qFCoQwaxEQAYm5O/hQN1mOAAAIiIDTIgjckDa30SmYl0zcnSDpHIcrR+SN5dzG53J2joDPy7oV6TS3aLiQy1/ltMKIZrFxiHQwm0jY9iEoVQ4OGoOJEQHQRHbeUqiA1pb4oM7y64MQY8k00tmQZ0zYbEmY52iStUXTsQyi0nUAfqdzb+Sqa+duI8HgH4iAZ6gN2HmZVPUw1VzgXa3SbyLgd1M+zunU0uAIgktN+0C6RSaY1aiSTFxO/WZ5hO06gOoapjbwxHqjaKrSABBd97Sf8ASbdE66m/REb3LYJ3A2MADyVRHpP0nxO9Sdt7xzS9gTctPMD5R2TjMA4wTS8IH3QQd9yTaVLZQcIhpmB1AuRFyLlA06m0mCdMbGJm3ODZLokxp06m2gm9+QA6Jfunu/wy1t5sdwJPISirTpApM7mNQEbR09EDNamHH4YgjkJ7HyTlIAfFE3AmOUDb1R08NUBnSZgzb5b7+qXTy6qevyMzCBl1MEagAD1LY+iVhjcNsf3pF+UdvNSzgnuAkEmBYidu8W/mobqdZzjLCItpA36HYSgl4nAuganBvIbET6pqrRtYzFriQfpdPu1Cxpm45A7efJE6XO0jV5lvbl19UKgjCAO1CAB1t0F7W3mFO9y0i5aZ5iRt38krEYUuG50yLaT67clHw+HJfADo577Dmgkvy8EgibDeZ5c+uw36pLaAAIuLC25NufRB1ZzZs+1hAfExsfqiZqe74QZiZmfO2/8AJZgRVe2C34CN5IkgcrW26oUaLWkODnFt+Ut57j6J6vS3GkGYE6bRtbvdMlp+EM8OmDLSB0PKOSoUMO11w6AJGktiSTIEkFEKTWnwgtIF5An05wmH0nU48Dntd92BpAneY3/ipGKb7ynJY+xkDTJB8ugSAqWLa8kRf8URB/ikYlzmA6W6iOZcPnB/kkta4M0hpB3JIJPm6RZNCg4Q8yTO0RO1rbpA+2sHaZBBIg21AH97om6jjJIO3Y9tySmve1XEhojeQWmN+Vt0eKAkN0OPMwC0dzKQM1XCfDHLVcT1BiNtro67ZmbkXtAt16JNYQ7UGuMCJDSbxYGdx5KOyk+Q/S+TYNgz2m238E3B3QoigggNBBBAlEUEEBoOQQRBIPQQQwRSkEEUAgUEEQlG7ZBBAbUbkSCA0AiQQBA8kEEBBKQQQBBBBFGiQQUV/9k="
+                            alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="description">
+                            <strong>
+                                <p>Air Jordan 3 Mid</p>
+                            </strong>
+                            <p> Colors - 3 avail</p>
+                            <p>Men's shoes</p>
+                            <p>MRP: Rs.120</p>
+                            <button>Add To Cart</button>
+                            <br>
+                            <button>By Now</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart">
+                    <div><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQXrEycrYf5yDfZrJFR5otoRKAJfTwwBcWtg&s"
+                            alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="description">
+                            <strong>
+                                <p>Air Jordan 4 Mid</p>
+                            </strong>
+                            <p> Colors - 3 avail</p>
+                            <p>Men's shoes</p>
+                            <p>MRP: Rs.120</p>
+                            <button>Add To Cart</button>
+                            <br>
+                            <button>By Now</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
